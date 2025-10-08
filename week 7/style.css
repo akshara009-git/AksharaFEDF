@@ -1,0 +1,136 @@
+/* General */
+body {
+  font-family: Arial, sans-serif;
+  
+  background: #4aaba3;
+  margin: 0;
+  padding: 15px;
+}
+
+h1, h2 {
+  margin: 10px 0;
+}
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-box {
+  background: rgb(97, 232, 142);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.login-box input {
+  display: block;
+  margin: 10px auto;
+  padding: 8px;
+  width: 80%;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+button {
+  background: #4b89cb;
+  color: rgb(231, 228, 63);
+  border: none;
+  border-radius: 6px;
+  padding: 8px 14px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+button:hover {
+  background: #ede631;
+}
+
+/* Header Bar */
+.header-bar {
+  background: #355c87;
+  color: rgb(228, 95, 162);
+  text-align: center;
+  padding: 10px;
+}
+
+.header-bar nav {
+  margin-top: 8px;
+}
+
+.header-bar button {
+  background: rgb(235, 245, 44);
+  color: #95b0cc;
+  font-weight: bold;
+}
+
+.header-bar button:hover {
+  background: #c9e12b;
+}
+
+/* Books/Cart styling */
+.book {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #c8f55f;
+}
+
+.book:last-child {
+  border-bottom: none;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0;
+}
+
+.cart-total {
+  font-weight: bold;
+  margin-top: 10px;
+}/* style.css */
+
+/* style.css */
+
+#shoppingCart {
+    background-image: url('cart.png'); 
+    
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center center;
+    padding: 20px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+#bookList {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    background-image: url('image.png'); 
+    
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    
+    background-position: center center; 
+    background-attachment: scroll; 
+    
+    padding: 20px;
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+}
+.book {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

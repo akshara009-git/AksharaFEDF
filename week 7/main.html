@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Online Bookstore</title>
+  <script>
+    window.cart = [];
+
+    window.addToCart = function(book) {
+      window.cart.push(book);
+      console.log("Added:", book.title);
+    };
+
+    window.removeFromCart = function(index) {
+      window.cart.splice(index, 1);
+    };
+
+    window.calculateTotal = function() {
+      return window.cart.reduce((sum, book) => sum + book.price, 0);
+    };
+  </script>
+</head>
+<frameset rows="20%,*">
+  <frame src="header.html" name="headerFrame" scrolling="no" noresize>
+  <frame src="books.html" name="contentFrame">
+</frameset>
+</html>
